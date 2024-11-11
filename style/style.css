@@ -1,0 +1,81 @@
+
+
+body {
+	font: 12px "Times New Roman", Tahoma, Verdana, sans-serif;
+	background-image: url(../images/fondo2.jpg);
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* DIV CONTENEDOR GENERAL */
+
+#wrapper {
+	width: 95%;
+	margin: auto;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+header {
+	height: 300px;
+/*	background: #FFE680;	*/
+	font: 45px "Papyrus";
+	font-variant: small-caps;
+}
+
+header div {
+	text-align: center;
+	vertical-align: middle;
+	width: 45%;
+	display: inline-block;
+}
+
+#logo {
+	width:30%;
+	
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#middle {
+	width: 100%;
+    background-color: grey; 
+    overflow: auto;
+}
+
+#content {
+    /*Si no asociamos anchura al content intenta coger el 100% y se coloca en una línea diferente a la del #sideRight*/
+	width: 76%;
+	float: left;
+    background-color: grey;
+    padding: 10px;   
+}
+
+#sideRight {
+	float: right;
+	width: 20%;
+	background: #FFACAA;
+	padding: 10px;	
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+footer {
+    float: left;
+	clear: left;
+	height: 300px;
+	background: #013147;
+	color:white;
+}
+
+footer li {
+	list-style-type: none;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+/*footer img:visited, footer img:link {
+	color:grey;
+}
+No funciona */
