@@ -1,7 +1,7 @@
 
 
 body {
-	font: 12px "Times New Roman", Tahoma, Verdana, sans-serif;
+	font: 14px "Times New Roman", Tahoma, Verdana, sans-serif;
 	background-image: url(../images/fondo2.jpg);
 	background-repeat:no-repeat;
 	background-attachment: fixed;
@@ -44,9 +44,13 @@ header div {
     overflow: auto;
 }
 
+#middle li {
+	list-style-type: circle;
+}
+
 #content {
     /*Si no asociamos anchura al content intenta coger el 100% y se coloca en una línea diferente a la del #sideRight*/
-	width: 76%;
+	width: 65%;
 	float: left;
     background-color: grey;
     padding: 10px;   
@@ -54,9 +58,18 @@ header div {
 
 #sideRight {
 	float: right;
-	width: 20%;
+	width: 25%;
 	background: #FFACAA;
-	padding: 10px;	
+	padding: 10px;
+	text-align: center;
+}
+
+#sideRight li {
+	border:dashed 2px red;
+	padding: 10px;
+	margin: 20px;
+	margin-left: 0px;
+	list-style-type: upper-roman;
 }
 
 /* Footer
@@ -65,17 +78,39 @@ footer {
     float: left;
 	clear: left;
 	height: 300px;
+	width: 100%;
 	background: #013147;
 	color:white;
+	font: 20px "Lucida Handwriting";
+	font-variant: small-caps;
+}
+
+footer div {
+	display: inline;
+	width: 100%;
+	text-align: center;
+}
+
+footer p {
+	text-align: center;
+	padding: 10px;
 }
 
 footer li {
 	list-style-type: none;
-	border: 1px solid black;
-	border-collapse: collapse;
+	display:inline;
 }
 
-/*footer img:visited, footer img:link {
-	color:grey;
+footer img {
+	height: 110px;
+	width: 150px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 20px;
+	margin: 20px;
+	margin-top: 0px;
 }
-No funciona */
+
+footer img:hover {
+	background-color: black;
+}
