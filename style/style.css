@@ -44,6 +44,10 @@ header div {
     overflow: auto;
 }
 
+span {
+	text-decoration: underline;
+}
+
 #middle li {
 	list-style-type: circle;
 }
@@ -70,6 +74,10 @@ header div {
 	margin: 20px;
 	margin-left: 0px;
 	list-style-type: upper-roman;
+}
+
+mark {
+	background-color: rgba(211, 211, 211, 0.582);
 }
 
 /* Footer
