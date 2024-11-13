@@ -94,8 +94,8 @@ footer {
 }
 
 footer div {
-	display: inline;
-	width: 100%;
+	display: inline-block;
+	width: 60%;
 	text-align: center;
 }
 
