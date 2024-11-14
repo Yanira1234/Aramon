@@ -85,7 +85,7 @@ mark {
 footer {
     float: left;
 	clear: left;
-	height: 300px;
+	height: 440px;
 	width: 100%;
 	background: #013147;
 	color:white;
@@ -95,8 +95,16 @@ footer {
 
 footer div {
 	display: inline-block;
-	width: 60%;
 	text-align: center;
+	vertical-align: top;
+}
+
+footer div.patrocinadores {
+	width: 60%;
+}
+
+footer div.redessociales {
+	width: 30%;
 }
 
 footer p {
@@ -106,12 +114,12 @@ footer p {
 
 footer li {
 	list-style-type: none;
-	display:inline;
+	display:inline-block;
 }
 
 footer img {
-	height: 110px;
-	width: 150px;
+	height: 90px;
+	width: 130px;
 	border: 1px solid black;
 	border-collapse: collapse;
 	padding: 20px;
