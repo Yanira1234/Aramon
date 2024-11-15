@@ -44,8 +44,37 @@ header div {
     overflow: auto;
 }
 
+/*Galeria
+-------------------------------------------*/
+table.imagenes {
+	width:90%;
+	margin: 20px 60px;
+	text-align: center;
+}
+
+table.imagenes img {
+	height: 180px;
+	width: 230px;
+	margin:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Tablas de cebra
------------------------------*/
+------------------------------------------*/
 table.cebra {
 	width:90%;
 	margin: 0px 60px 40px;
@@ -55,7 +84,7 @@ table.cebra {
 	color: #0000FF;
 }
 
-table.cebra, tr, td {
+table.cebra, table.cebra tr, table.cebra td {
 	border: dotted black 2px;
 }
 
@@ -76,11 +105,8 @@ table.cebra tr:nth-child(even) td:not(.nocolor) {
 	background-color: #00b3b3;
 }
 
-
-
-
 /*Inicio
----------------------------*/
+-----------------------------------------------*/
 #content {
     /*Si no asociamos anchura al content intenta coger el 100% y se coloca en una línea diferente a la del #sideRight*/
 	width: 65%;
