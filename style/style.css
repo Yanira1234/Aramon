@@ -51,6 +51,24 @@ header div {
     overflow: auto;
 }
 
+/*Formulario
+-------------------------------------------*/
+form {
+
+}
+
+legend {
+
+}
+
+input {
+	margin-bottom:20px;
+}
+
+
+
+
+
 /*Galeria
 -------------------------------------------*/
 table.imagenes, table.videos {

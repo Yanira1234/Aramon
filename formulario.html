@@ -44,18 +44,80 @@
 		<div id="middle">
 			<h1>Formulario de contacto</h1>
 			<form>
+				<fieldset>
+					<legend>Datos personales</legend>
+
+					<label for="usuario">Usuario:</label>
+					<input tipe="email" name="usuario" required><br>
+					<label for="contraseña">Contraseña:</label>
+					<input name="contraseña" type="password" required><br>
+					
+					<label for="nombre">Nombre:</label>
+					<input type="text" name="nombre" required>
+					<label for="apellidos">Apellidos:</label>
+					<input type="text" name="apellidos" required><br>
+
+					<label for="fhnacimiento">Fecha y hora de nacimiento:</label>
+					<input name="fhnacimiento" type="datetime-local" required>
+
+					<label for="edad">Edad:</label>
+					<input name="edad" type="number" min="0" max="100"><br>
+
+					<label for="telefono">Teléfono:</label>
+					<input name="telefono" type="tel" required><br>
 
 
+					
+					
+					<!--Desplegable para seleccionnar el lugar: "Cerler", "Formigal", "Javalambre", etc.-->
 
+					<!--Texto para el hotel concreto-->
 
+					<!--Numero tanto para la edad como para el numero de noches-->
 
-
-
-
-
-
-
+					<!--Fecha para el momento de inicio y el de fin de la reserva-->
+				</fieldset>
 				
+				<fieldset>
+					<legend>Preferencias/Gustos</legend>
+
+					<label for="pistas">Pistas favoritas:</label><br>
+					<input type="checkbox" name="pistas" value="blanca">
+					<label for="pistas">Blancas</label><br>
+					<input type="checkbox" name="pistas" value="negra">
+					<label for="pistas">Negras</label><br>
+					<input type="checkbox" name="pistas" value="roja">
+					<label for="pistas">Rojas</label><br>
+
+
+				</fieldset>
+
+				<fieldset>
+					<legend>Datos de la reserva</legend>
+
+					<label for="mes">Mes de la reserva:</label>
+					<input name="mes" type="month"><br>
+
+					<label for="semana">Semana de la reserva:</label>
+					<input name="semana" type="week"><br>
+
+					<label for="incluye">¿Forfait incluido?:</label><br>
+					<input type="radio" name="incluye" value="Si">
+					<label>Sí</label><br>
+					<input type="radio" name="incluye" value="No">
+					<label>No</label><br>
+
+					<label for="inicioR">Fecha de inicio de la reserva:</label>
+					<input name="inicioR" type="date">
+					<label for="finR">Fecha de finalizacion de la reserva:</label>
+					<input name="finR" type="date"><br>
+
+					<label for="fcolor">Nivel máximno de pista:</label>
+					<input name="fcolor" type="color"><br>
+				</fieldset>
+
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Borrar">
 			</form>
 		<!-- #middle-->
         </div>
