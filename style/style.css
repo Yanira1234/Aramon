@@ -102,13 +102,16 @@ table.cebra tr:nth-child(even) td:not(.nocolor) {
     /*Si no asociamos anchura al content intenta coger el 100% y se coloca en una línea diferente a la del #sideRight*/
 	width: 65%;
 	float: left;
-    background-color: grey;
     padding: 10px;
 	margin-left: 3%;   
 }
 
-#content li {
+#content li.ul {
 	list-style-type: circle;
+}
+
+li.ol {
+	list-style-type:lower-roman;
 }
 
 #sideRight {
