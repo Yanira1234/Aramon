@@ -47,70 +47,80 @@
 				<fieldset>
 					<legend>Datos personales</legend>
 
-					<label for="usuario">Usuario:</label>
+					<label for="usuario">Usuario*:</label>
 					<input tipe="email" name="usuario" required><br>
-					<label for="contraseña">Contraseña:</label>
+					
+					<label for="contraseña">Contraseña*:</label>
 					<input name="contraseña" type="password" required><br>
 					
-					<label for="nombre">Nombre:</label>
+					<label for="nombre">Nombre*:</label>
 					<input type="text" name="nombre" required>
-					<label for="apellidos">Apellidos:</label>
+					
+					<label for="apellidos">Apellidos*:</label>
 					<input type="text" name="apellidos" required><br>
 
-					<label for="fhnacimiento">Fecha y hora de nacimiento:</label>
+					<label for="fhnacimiento">Fecha y hora de nacimiento*:</label>
 					<input name="fhnacimiento" type="datetime-local" required>
 
 					<label for="edad">Edad:</label>
 					<input name="edad" type="number" min="0" max="100"><br>
 
-					<label for="telefono">Teléfono:</label>
+					<label for="telefono">Teléfono*:</label>
 					<input name="telefono" type="tel" required><br>
 
+					<label for="dni">DNI*:</label>
+					<input type="text" name="dni" size="12" maxlength="9" required><br>
 
-					
-					
-					<!--Desplegable para seleccionnar el lugar: "Cerler", "Formigal", "Javalambre", etc.-->
-
-					<!--Texto para el hotel concreto-->
-
-					<!--Numero tanto para la edad como para el numero de noches-->
-
-					<!--Fecha para el momento de inicio y el de fin de la reserva-->
+					<label for="dificultad">Alguna enfermedad o discapacidad que se quiera mencionar:</label><br>
+					<textarea name="dificultad" rows="5" cols="70" placeholder="Escriba los problemas medicos que puedan afectar en la experiencia"></textarea><br>
 				</fieldset>
 				
 				<fieldset>
 					<legend>Preferencias/Gustos</legend>
 
 					<label for="pistas">Pistas favoritas:</label><br>
-					<input type="checkbox" name="pistas" value="blanca">
+					<input type="checkbox" name="pistas" value="blanca" class="listas">
 					<label for="pistas">Blancas</label><br>
-					<input type="checkbox" name="pistas" value="negra">
+					<input type="checkbox" name="pistas" value="negra" class="listas">
 					<label for="pistas">Negras</label><br>
 					<input type="checkbox" name="pistas" value="roja">
 					<label for="pistas">Rojas</label><br>
 
+					<label for="dificultad">Alguna otra cosa que se quiera mencionar:</label><br>
+					<textarea name="dificultad" rows="5" cols="70" placeholder="Escriba cualquier preferencia o gusto que quiera comentar"></textarea><br>
 
 				</fieldset>
 
 				<fieldset>
 					<legend>Datos de la reserva</legend>
 
-					<label for="mes">Mes de la reserva:</label>
-					<input name="mes" type="month"><br>
+					<label for="mes">Mes de la reserva*:</label>
+					<input name="mes" type="month" required><br>
 
-					<label for="semana">Semana de la reserva:</label>
-					<input name="semana" type="week"><br>
+					<label for="semana">Semana de la reserva*:</label>
+					<input name="semana" type="week" required><br>
 
+					<label for="dias">Número de noches*:</label>
+					<input name="dias" type="number" min="0" max="100" required><br>
+
+					<label for="lugar">Lugar de residencia:</label>
+					<input list="lugar">
+					<datalist id="lugar">
+						<option value="Cerler">
+						<option value="Formigal">
+						<option value="Panticosa">
+						<option value="Javalambre">
+						<option value="Valdelinares">
+					</datalist><br>
+
+					<label for="hotel">Hotel de residencia:</label>
+					<input type="text" name="hotel"><br>
+					
 					<label for="incluye">¿Forfait incluido?:</label><br>
-					<input type="radio" name="incluye" value="Si">
+					<input type="radio" name="incluye" value="Si" class="listas">
 					<label>Sí</label><br>
-					<input type="radio" name="incluye" value="No">
+					<input type="radio" name="incluye" value="No" class="listas">
 					<label>No</label><br>
-
-					<label for="inicioR">Fecha de inicio de la reserva:</label>
-					<input name="inicioR" type="date">
-					<label for="finR">Fecha de finalizacion de la reserva:</label>
-					<input name="finR" type="date"><br>
 
 					<label for="fcolor">Nivel máximno de pista:</label>
 					<input name="fcolor" type="color"><br>
